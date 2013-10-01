@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" tuio="false" simulator="false">
+
+	<LibraryKit>
+		<Library type="swf" src="assets/openexhibits_assets.swf" />	
+	</LibraryKit>
+	
+	<PhotoAlbumViewer id="av" x="0" y="0" rotation="0" autoTextLayout="false" linkAlbums="true" gestureReleaseInertia="true" resetTime="600" videoScrollAction="stop" playOnComplete="true">
+	
+		<Album id="front" loop="false" horizontal="true" applyMask="true" margin="8" visible="true" targetParent="false" mouseChildren="true" clusterBubbling="true" dragGesture="n-drag-album">
+			<Image name="NASA Logo" src="image1.jpg" width="1920" height="1080"/>
+			
+			<Image name="Sinai Peninsula (NASA, International Space Station Science)" src="image2.jpg" width="1920" height="1080"/>
+			
+			<Image name="Apollo 11 Astronaut Edwin Aldrin" src="image3.jpg" width="1920" height="1080"/>		
+			
+			<TouchContainer class="player" width="1920" height="1080" mouseChildren="false" disableNativeTransform="true">			
+				<Video src="NASA.mp4" width="1920" height="1080"/>
+				<Graphic shape="triangle" height="200" rotation="90" x="1060" y="440" alpha=".5"/> 
+				<GestureList>
+					<Gesture ref="n-tap" gestureOn="true"/>
+				</GestureList>				
+			</TouchContainer>
+					
+			<Image name="Space Station Over Earth" src="image4.jpg" width="1920" height="1080"/>
+			
+			<Image name="Space Shuttle Discovery (STS-131)" src="image5.jpg" width="1920" height="1080"/>	
+			
+			<Image name="STS-131 Discovery Rollout" src="image6.jpg" width="1920" height="1080"/>	
+			
+			<Image name="NASA Scientific Balloon in Antarctica" src="image7.jpg" width="1920" height="1080"/>	
+			
+			<Image name="South Pole Sunrise By Calee Allen (NASA/NSF)" src="image8.jpg" width="1920" height="1080"/>	
+			
+			<Image name="Mars Science Laboratory Curiosity Rover" src="image9.jpg" width="1920" height="1080"/>
+			
+					
+		</Album>
+		
+		<Album id="back" alpha=".5" loop="false" applyMask="true" horizontal="true" margin="8" visible="false" targetParent="false" dragGesture="n-drag-album">
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080" lineStroke="0"/>		
+				<Text class="title" y="220" fontSize="50" color="0xFFFFFF" text="Photo Album" textAlign="center" width="1920"/>
+				<Text class="description" y="300" text="NASA" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>	
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" fontSize="50" color="0xFFFFFF" text="Sinai Peninsula" textAlign="center" width="1920"/>
+				<Text class="description" y="300" text="NASA, International Space Station Science" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>	
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="Apollo 11 Astronaut Edwin Aldrin" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="NASA" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>	
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="NASA Planetary Science" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>		
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="Space Station Over Earth" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="NASA" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>		
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="Space Shuttle Discovery (STS-131)" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="NASA" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>				
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="STS-131 Discovery Rollout" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="NASA" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>						
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="NASA Scientific Balloon in Antarctica" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="Photo Credit: NASA" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>		
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="South Pole Sunrise" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="By Calee Allen (NASA/NSF)" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>
+			
+			<TouchContainer width="1920" height="1080">
+				<Graphic shape="rectangle" color="0x000000" width="1920" height="1080"/>		
+				<Text class="title" y="220" text="Mars Science Laboratory Curiosity Rover" width="1920" fontSize="50" textAlign="center" color="0xFFFFFF"/>
+				<Text class="description" y="300" text="NASA" width="1920" color="0xFFFFFF" fontSize="30" textAlign="center"/>
+			</TouchContainer>
+		
+		</Album>		
+		
+		<Menu class="menu_container" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="25" paddingRight="20" autoHide="true" visible="false">
+		
+			<Button id="back-btn" class="back_btn" dispatch="down:back" hit="back-hit" initial="back-up" down="back-down" up="back-up" out="back-up">
+				<Container id="back-up">
+					<Graphic alpha="1" shape="circle" radius="40" lineStroke="3" color="0x282E33" />	
+					<SWF alpha="1" x="18" y="58" color="0xFFFFFF" scale="3" rotation="-90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>
+				<Container id="back-down">
+					<Graphic alpha="1" shape="circle" radius="40" lineStroke="3" color="0x495E67" />	
+					<SWF alpha="1" x="18" y="58" color="0xCCCCCC" scale="3" rotation="-90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>	
+				<Container id="back-hit">
+					<Graphic id="back-hit-bg" shape="circle" radius="40" color="0x666666" alpha="0" />
+				</Container>
+			</Button>
+
+			<Button id="forward-btn" class="forward_btn" dispatch="down:forward" hit="forward-hit" initial="forward-up" down="forward-down" up="forward-up" out="forward-up">
+				<Container id="forward-up">
+					<Graphic alpha="1" shape="circle" radius="40" lineStroke="3" color="0x282E33" />	
+					<SWF alpha="1" x="62" y="23" color="0xFFFFFF" scale="3" rotation="90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>
+				<Container id="forward-down">
+					<Graphic alpha="1" shape="circle" radius="40" lineStroke="3" color="0x495E67" />	
+					<SWF alpha="1" x="62" y="23" color="0xCCCCCC" scale="3" rotation="90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>	
+				<Container id="forward-hit">
+					<Graphic id="forward-hit-bg" shape="circle" radius="40" color="0x666666" alpha="0" />
+				</Container>
+			</Button>
+
+			<Button id="info-btn" class="info_btn" dispatch="down:info" hit="info-hit" initial="info-up" down="info-down" up="info-up" out="info-up">
+				<Container id="info-up">
+					<Graphic alpha="1" shape="circle" radius="40" lineStroke="3" color="0x282E33" />	
+					<SWF alpha="1" x="30" y="16" color="0xFFFFFF" scale="3" classRef="org.openexhibits.assets.Info" />
+				</Container>
+				<Container id="info-down">
+					<Graphic id="info-bg-down" shape="circle" radius="40" lineStroke="3" color="0x495E67" />	
+					<SWF alpha="1" x="30" y="16" color="0xCCCCCC" scale="3" classRef="org.openexhibits.assets.Info" />
+				</Container>	
+				<Container id="info-hit">
+					<Graphic id="info-hit-bg" shape="circle" radius="40" color="0x666666" alpha="0" />
+				</Container>
+			</Button>
+			
+		<!--	<Button id="close-btn" class="close_btn" dispatch="down:close" hit="close-hit" initial="close-up" down="close-down" up="close-up" out="close-up">
+				<Container id="close-up" class="up" >
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+					<SWF alpha="1" x="11" y="11" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Close"/>
+				</Container>
+				<Container id="close-down" class="down">
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x495E67" />	
+					<SWF alpha="1" x="11" y="11" color="0xCCCCCC" scale="1.6" classRef="org.openexhibits.assets.Close" />
+				</Container>	
+				<Container id="close-hit" class="hit">
+					<Graphic id="close-hit-bg" shape="circle" radius="20" alpha="0" />
+				</Container>
+			</Button>-->
+		
+		</Menu>
+		
+		<GestureList>
+			<Gesture ref="n-manipulate-inertia-boundary" gestureOn="true"/>
+		</GestureList>
+		
+	</PhotoAlbumViewer>
+		
+
+</cml>
