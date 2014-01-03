@@ -5,7 +5,7 @@
 package 
 {
 	import com.gestureworks.cml.core.CMLParser;
-	import com.gestureworks.cml.element.Album;
+	import com.gestureworks.cml.elements.Album;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.FrameRate;
 	import flash.events.Event;

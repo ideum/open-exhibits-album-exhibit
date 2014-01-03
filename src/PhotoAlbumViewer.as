@@ -1,9 +1,9 @@
 package  
 {
 	import com.gestureworks.cml.components.AlbumViewer;
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.TouchContainer;
-	import com.gestureworks.cml.element.Video;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.TouchContainer;
+	import com.gestureworks.cml.elements.Video;
 	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.events.GWGestureEvent;
 	import flash.events.TimerEvent;
@@ -55,12 +55,6 @@ package
 				timer.start();
 				timer.addEventListener(TimerEvent.TIMER, timeExpired);			
 			}			
-		}
-		
-		override public function displayComplete():void 
-		{
-			super.displayComplete();
-			init();						
 		}
 		
 		public function get resetTime():Number { return _resetTime; }
