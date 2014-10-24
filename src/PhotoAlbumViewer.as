@@ -5,13 +5,14 @@ package
 	import com.gestureworks.cml.elements.TouchContainer;
 	import com.gestureworks.cml.elements.Video;
 	import com.gestureworks.cml.events.StateEvent;
+	import com.gestureworks.cml.utils.document;
 	import com.gestureworks.events.GWGestureEvent;
 	import flash.events.TimerEvent;
 	import flash.events.TouchEvent;
 	import flash.utils.Timer;
 	/**
 	 * ...
-	 * @author Jenny
+	 * @author Ideum
 	 */
 	public class PhotoAlbumViewer extends AlbumViewer
 	{		
@@ -37,10 +38,12 @@ package
 			
 			var f:Function = videoScrollAction == "stop" ? stop : pause;
 			front.addEventListener(StateEvent.CHANGE, f);			
-			players = front.childList.getCSSClass("player").getValueArray();
+			back.addEventListener(StateEvent.CHANGE, f);			
+			players = document.getElementsByClassName("player");
 
-			if (playOnComplete)
-				front.addEventListener(StateEvent.CHANGE, play);
+			if (playOnComplete){
+				front.addEventListener(StateEvent.CHANGE, play);												
+			}
 			else{
 				for each(var player:TouchContainer in players)
 					player.addEventListener(GWGestureEvent.TAP, play);			
