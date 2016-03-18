@@ -6,14 +6,14 @@ The album exhibit is a multitouch interface that allows fullscreen images and vi
 ![Screenshot of Album Exhibit](http://openexhibits.org/wp-content/uploads/2013/06/album-new.jpg)
 
 SUPPORTED OPERATING SYSTEMS<br>
-Windows 7<br>
-Windows 8
+- Windows 7<br>
+- Windows 8
 
 ASSOCIATED LANGUAGES<br>
-ActionScript 3
+- ActionScript 3
 
 REQUIRED ENVIRONMENTS<br>
-Adobe Flash Player 11+
+- Adobe Flash Player 11+
 
 DOCUMENTATION<br>
 http://openexhibits.org/wp-content/uploads/documentation/PhotoViewerDocumentation.pdf
