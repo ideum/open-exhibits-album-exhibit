@@ -16,4 +16,4 @@ REQUIRED ENVIRONMENTS
 - Adobe Flash Player 11+
 
 DOCUMENTATION
-http://openexhibits.org/wp-content/uploads/documentation/PhotoViewerDocumentation.pdf
+- http://openexhibits.org/wp-content/uploads/documentation/PhotoViewerDocumentation.pdf
